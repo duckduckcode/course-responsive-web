@@ -93,4 +93,3 @@ Copy text from catipsum.com and replace the word Content
 ## Challenge
 
 Have a go at [CSS Grid Garden](https://cssgridgarden.com)
-

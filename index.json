@@ -4,7 +4,7 @@
     { "id": "overview", "title": "Overview" },
     { "id": "dev-tools", "title": "Dev Tools" },
     { "id": "percentage-sizing", "title": "Percentage Sizing" },
-    { "id": "flexbox-layout", "title": "FlexBox" },
+    { "id": "flexbox-layout", "title": "FlexBox Layout" },
     { "id": "grid-layout", "title": "Grid Layout" },
     { "id": "media-query-grid", "title": "Media Query Grid" }
   ]

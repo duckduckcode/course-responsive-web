@@ -1,4 +1,4 @@
-# Grid Layout
+# Media Query Grid
 
 This layout uses 1 column on mobile, 3 on medium screens and 5 on large screens.
 
