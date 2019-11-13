@@ -4,7 +4,7 @@ Percentage sizing should be the base of any responsive design. Start here, and u
 
 Open this link then follow the instructions:
 
-[https://glitch.com/edit/#!/sulky-cell]
+
 
 ## Viewport Meta Tag
 
@@ -57,3 +57,6 @@ Using this setting will allow your background image to re-flow to fit any contai
 
 Your background image should resize to always fill the header.
 
+## Completed Challenge
+
+[https://glitch.com/edit/#!/sulky-cell](https://glitch.com/edit/#!/sulky-cell)

@@ -19,18 +19,7 @@
 
 Your title should be on the left, and links on the right.
 
-## Content Panels
 
-```
-.panels-container {
-  display: flex;
-  flex-direction: row;
-}
+## Challenge
 
-.panel {
-  flex: 1;
-}
-```
-
-Your panels should now be horizontal and equally sized.
-
+Have a go at [FlexBox Froggy](https://flexboxfroggy.com)

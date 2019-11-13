@@ -2,11 +2,11 @@
   "title": "Responsive Web",
   "chapters": [
     { "id": "overview", "title": "Overview" },
-    { "id": "concepts", "title": "Concepts" },
     { "id": "dev-tools", "title": "Dev Tools" },
     { "id": "percentage-sizing", "title": "Percentage Sizing" },
-    { "id": "viewport-sizing", "title": "Font Sizing" },
+    { "id": "viewport-sizing", "title": "Viewport Sizing" },
     { "id": "flexbox", "title": "FlexBox" },
+    { "id": "grid-layout", "title": "Grid Layout" },
     { "id": "media-queries", "title": "Media Queries" }
   ]
 }

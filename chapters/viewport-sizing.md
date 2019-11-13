@@ -1,8 +1,8 @@
-# Font Sizing
+# Viewport Sizing
 
 Open this link then follow the instructions:
 
-[https://glitch.com/edit/#!/purring-santanaraptor]
+
 
 ## Use view-relative sizing for heights
 
@@ -30,3 +30,7 @@ for font sizes, instead of using pixels.
 
 Your page title should resize as the browser height changes.
 
+
+## Completed
+
+[https://glitch.com/edit/#!/purring-santanaraptor](https://glitch.com/edit/#!/purring-santanaraptor)
