@@ -1,86 +1,96 @@
 # Grid Layout
 
-This layout uses 1 column on mobile, 3 on medium screens and 5 on large screens.
+Open this link and follow the instructions:
 
+[https://glitch.com/edit/#!/olive-silene](https://glitch.com/edit/#!/olive-silene)
 
+## Apply grid layout rules
 
-## Mobile First
-
-```html
-<ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-</ul>
 ```
-
-```css
-/* mobile-first */
-ul {
-  list-style: none;
-  padding: 0;
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-/* individual items */
-li {
-  box-sizing: border-box;
-  border: 2px solid red;
-  padding: 10px;
 }
 ```
 
-## Medium Screens
-
-Use 3 columns when the screen is wider than 800px.
-
-```css
-/* medium screens */
-@media(min-width: 800px) {
-  ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-```
-
-## Large Screens
-
-Use 5 columns when the screen is wider than 1000px.
-
-```css
-/* large screens */
-@media(min-width: 1000px) {
-  ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
-```
-
-## Row and Column Gaps
+## Split into two columns
 
 ```
-/* mobile-first */
-ul {
+.grid-container {
   ...
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-columns: 200px auto;
 }
 ```
+
+## Make the header span two columns
+
+```
+.header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+```
+
+## Make the grid take up the whole page
+
+```
+body {
+  ...
+  margin: 0;
+}
+
+.grid-container {
+  ...
+  height: 100vh;
+}
+```
+
+## Set the height of the header row
+
+```
+.grid-container {
+  ...
+  grid-template-rows: 100px auto;
+}
+```
+
+## Add a scrollable content area
+
+```
+<div class="content">
+  <div class="scroll-area">
+    Content
+  </div>
+</div>
+```
+
+
+Copy text from catipsum.com and replace the word Content
+
+## Size scroll area to fit the grid cell
+
+```
+.content {
+  ...
+  position: relative;
+}
+
+.scroll-area {
+  height: 100%;
+  overflow: auto;
+  
+  /* size this box relative to its parent */
+  position: absolute;
+}
+
+```
+
 
 ## Completed Task
 
-Here is the completed version of the above:
+[https://glitch.com/edit/#!/prong-silene](https://glitch.com/edit/#!/prong-silene)
 
-[https://glitch.com/edit/#!/puzzling-sunshine](https://glitch.com/edit/#!/puzzling-sunshine)
 
 ## Challenge
 
 Have a go at [CSS Grid Garden](https://cssgridgarden.com)
+
