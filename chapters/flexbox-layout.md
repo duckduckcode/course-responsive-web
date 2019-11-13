@@ -1,5 +1,7 @@
 # FlexBox Layout
 
+Flexbox is best for arranging elements in either a single row, or a single column.
+
 ## Navigation Bar
 
 ```

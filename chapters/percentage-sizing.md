@@ -4,6 +4,7 @@ Percentage sizing should be the base of any responsive design. Start here, and u
 
 Open this link then follow the instructions:
 
+[https://glitch.com/edit/#!/wooded-raver](https://glitch.com/edit/#!/wooded-raver)
 
 
 ## Viewport Meta Tag
@@ -22,7 +23,7 @@ Instead of using pixel sizing, use percentage sizing wherever possible. Percenta
 
 ```
 .container {
-  width: 100%;
+  width: 90%;
 }
 ```
 
@@ -35,7 +36,7 @@ gives you full-width on mobile and limited width on desktop.
 
 ```
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -43,13 +44,41 @@ gives you full-width on mobile and limited width on desktop.
 
 Your main content size should be limited on large screens.
 
+## Title Text
+
+The vh and vw units can also be used
+for font sizes, instead of using pixels.
+
+```
+.title {
+  font-size: 8vw;
+  text-align: center;
+}
+```
+
+Your page title should resize as the browser height changes.
+
+## Use view-relative sizing for heights
+
+The vh measurement is like %, but it’s a percentage
+of the view height not the container height.
+
+```
+.header {
+  height: 60vh;
+}
+```
+
+Your header box should resize as the browser height changes.
+
+
 ## Use "cover" with background images
 
 Using this setting will allow your background image to re-flow to fit any container size. Make sure to consider how the image could be cropped when choosing the image.
 
 ```
 .header {
-  background-image: url("https://cdn.glitch.com/0e9aefe5-f7e5-4bd0-8d41-68a0f1e2510c%2Fheader-background.jpg?v=1573535558245");
+  background-image: url("https://cataas.com/cat?width=1200?height=800");
   background-size: cover;
   background-position: center center;
 }
