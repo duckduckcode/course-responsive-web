@@ -6,6 +6,7 @@
     { "id": "percentage-sizing", "title": "Percentage Sizing" },
     { "id": "flexbox-layout", "title": "FlexBox Layout" },
     { "id": "grid-layout", "title": "Grid Layout" },
+    { "id": "media-queries", "title": "Media Queries "},
     { "id": "media-query-grid", "title": "Media Query Grid" }
   ]
 }

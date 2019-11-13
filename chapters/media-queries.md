@@ -3,81 +3,62 @@
 Media queries can apply CSS based on screen size.
 They can not modify HTML.
 
-## Background Styling
+Click the link then follow along:
 
-On all screens smaller than 800 pixels,
-use a larger image for higher quality.
+[https://glitch.com/edit/#!/lyrical-sturgeon](https://glitch.com/edit/#!/lyrical-sturgeon)
+
+## Screens wider than a certain measure
 
 ```
-@media (min-width: 800px) {
-  .header {
-    background: url(images/header-background-large.jpg);
+@media only screen and (min-width: 500px) {
+  .bigger-than-500 {
+    border-color: green;
   }
 }
 ```
 
-On large screens, your header should now use the alternative image.
-
-## Menu Layout Direction
-
-On all screens smaller than 800 pixels,
-make the main menu use a column layout.
+## Screens narrower than a certain measure
 
 ```
-@media (max-width: 800px) {
-  .main-menu {
-    flex-direction: column;
+@media only screen and (max-width: 500px) {
+  .smaller-than-500 {
+    border-color: green;
   }
 }
 ```
 
-On small screens, the main menu should be stacked.
-
-## Column Stacking
+## Screens between two sizes
 
 ```
-/* default, 801px to 1999px: 3 columns */
-.list-item {
-  width:
-}
-
-/* screens smaller than 800px: 1 column */
-@media (max-width: 800px) {
-  .list-item {
-    width: 100%;
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .between-500-and-800 {
+    border-color: green;
   }
 }
+```
 
-/* screens larger than 2000px: 5 columns */
-@media (min-width: 2000px) {
-  .list-item {
+## Horizontal aspect ratio
 
+```
+@media only screen and (min-aspect-ratio: 1/1) {
+  .aspect-ratio-horizontal {
+    border-color: green;
   }
 }
-
 ```
 
-
-
-## Hidden Content
-
-## Body Text
-
-Using vw and vh for sizing body text doesn't work so well, because it can end up getting too big or too small. It's better to choose a "normal" size and a "small" size.
-
-The default font size for most browsers is 16px. All font sizes you use should be relative to the default font size, and then you should change the default font size to be smaller or larger as needed.
+## Vertical Aspect Ratio
 
 ```
-html {
-  font-size: 10px;
-}
-
-h2 {
-  font-size: 2.4rem; // 24px
-}
-
-p {
-  font-size: 1.6rem; // 16px;
+@media only screen and (max-aspect-ratio: 1/1) {
+  .aspect-ratio-vertical {
+    border-color: green;
+  }
 }
 ```
+
+## Completed Activity
+
+[https://glitch.com/edit/#!/frosted-ankylosaurus](https://glitch.com/edit/#!/frosted-ankylosaurus)
+
 
