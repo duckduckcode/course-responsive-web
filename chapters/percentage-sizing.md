@@ -46,7 +46,7 @@ Your main content size should be limited on large screens.
 
 ## Title Text
 
-The vh and vw units can also be used
+Unlike percentages, the vh and vw units can be used
 for font sizes, instead of using pixels.
 
 ```
@@ -56,12 +56,12 @@ for font sizes, instead of using pixels.
 }
 ```
 
-Your page title should resize as the browser height changes.
+Your page title should resize as the browser width changes.
 
 ## Use view-relative sizing for heights
 
 The vh measurement is like %, but it’s a percentage
-of the view height not the container height.
+of the window height not the container height.
 
 ```
 .header {
@@ -80,11 +80,13 @@ Using this setting will allow your background image to re-flow to fit any contai
 .header {
   background-image: url("https://cataas.com/cat?width=1200?height=800");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 ```
 
 Your background image should resize to always fill the header.
+
+The background position can also include combinations of top, bottom, left, right.
 
 ## Completed Challenge
 

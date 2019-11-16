@@ -1,6 +1,6 @@
 # Media Query Grid
 
-This layout uses 1 column on mobile, 3 on medium screens and 5 on large screens.
+This layout uses 2 columns on mobile, 4 on medium screens and 6 on large screens.
 
 Open the link below and follow the instructions:
 
